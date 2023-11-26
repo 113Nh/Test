@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -38,12 +38,5 @@
         }
     }
 </script>
-<div>
-        @foreach($questions as $question)
-            <div><a href="https://teratail.com/questions/{{ $question['id'] }}">
-                    {{ $question['title'] }}
-                </a></div>
-        @endforeach
-    </div>
     </body>
 </html>
